@@ -21,6 +21,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         existingButton.addEventListener("click", function() {
           alert("Logged in as " + localStorage.getItem("username"));
         });
-        // document.body.appendChild(existingButton);
+      existingButton.style.visibility = "visible";
       }
     });
