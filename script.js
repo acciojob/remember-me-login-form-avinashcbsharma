@@ -17,12 +17,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
       alert("Logged in as " + username);
 
       if (localStorage.getItem("username") !== null && localStorage.getItem("password") !== null) {
-        var existingButton = document.createElement("button");
-        existingButton.setAttribute("id", "existing");
-        existingButton.textContent = "Login as existing user";
+        var existingButton = document.getElementById('existing');        
         existingButton.addEventListener("click", function() {
           alert("Logged in as " + localStorage.getItem("username"));
         });
-        document.body.appendChild(existingButton);
+        // document.body.appendChild(existingButton);
       }
     });
